@@ -27,3 +27,27 @@ Analyzed 1 year of coffee shop sales data to identify key business insights. Thi
 
 ## 📁 Files
 - `coffee project.pbix` - Power BI file. Download and open in Power BI Desktop
+
+
+
+## 🔍 Methodology
+
+**1. Data Collection & Cleaning**
+- Raw sales data ko Excel me import kiya
+- Duplicate values, nulls aur wrong date formats remove kiye
+- New columns banaye: `Hour`, `DayName`, `Month` for better analysis
+
+**2. Data Modeling in Power BI**
+- Date table banayi aur Sales table se relationship join ki
+- Primary Key: `TransactionID` | Secondary Key: `ProductID`, `Date`
+- DAX measures banaye: `Total Sales`, `YOY Growth %`, `Avg Transaction Value`
+
+**3. Dashboard Development**
+- 3 interactive pages banaye: Overview, Sales Trend, Product Analysis
+- Slicers add kiye: Date, Product Category, Location
+- Conditional formatting use ki for peak hours highlight
+
+**4. Insights & Recommendations**
+- Peak hours identify kiye for staff scheduling
+- Monthly trend se low sales months nikale
+- Top 5 products ka analysis karke inventory suggestion diya
