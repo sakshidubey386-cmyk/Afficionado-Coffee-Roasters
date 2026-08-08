@@ -29,6 +29,132 @@ Analyzed 1 year of coffee shop sales data to identify key business insights. Thi
 - `coffee project.pbix` - Power BI file. Download and open in Power BI Desktop
 
 
+# Coffee Shop Sales Analysis – 2025
+
+## Project Overview
+
+This project focuses on analyzing coffee shop sales data for 2025 to identify sales trends, customer demand patterns, peak business hours, slow periods, and differences in sales performance across store locations.
+
+## Analytical Methodology
+
+### 1. Data Ingestion & Validation
+
+- Loaded the transaction dataset into Power BI.
+- Checked and converted timestamp values into the correct date and time format.
+- Identified and removed duplicate transaction IDs.
+- Checked missing values in key fields such as Transaction ID, Date, Quantity, and Price.
+- Verified that transaction quantities and unit prices were positive.
+- Reviewed invalid or inconsistent records.
+- Confirmed that the cleaned dataset was ready for further analysis.
+
+### 2. Feature Engineering (Temporal)
+
+#### Revenue per Transaction
+
+Revenue per Transaction = Transaction Quantity × Unit Price
+
+#### Hour Extraction
+
+- Extracted the hour (0–23) from the transaction timestamp.
+- Used the hour for analyzing hourly sales patterns.
+
+#### Day of Week
+
+- Derived the day of the week from the transaction date.
+- Compared sales performance across different weekdays.
+
+#### Time Buckets
+
+Transactions were classified into four time buckets:
+
+- **Morning:** 6:00 AM – 11:59 AM
+- **Afternoon:** 12:00 PM – 4:59 PM
+- **Evening:** 5:00 PM – 9:59 PM
+- **Late Hours:** 10:00 PM – 5:59 AM
+
+All engineered features were validated before further analysis.
+
+### 3. Sales Trend Analysis
+
+- Imported the Afficionado Coffee Roasters sales dataset into Power BI.
+- Checked missing values and duplicates.
+- Converted the date column into the correct date format.
+- Verified sales and transaction data.
+- Created relationships between tables where required.
+- Developed measures such as Total Revenue and Total Transactions.
+- Used line charts to analyze daily revenue trends.
+- Identified high- and low-performing days.
+- Analyzed weekly revenue and transaction performance.
+- Examined upward and downward sales trends.
+- Compared revenue trends across store locations.
+- Identified the best- and lowest-performing stores.
+- Summarized findings and provided recommendations.
+
+### 4. Day-of-Week Performance Analysis
+
+- Imported the transaction dataset into Power BI.
+- Validated timestamp values.
+- Checked for missing and duplicate data.
+- Verified transaction quantities and unit prices.
+- Reviewed invalid or inconsistent records.
+- Confirmed that the cleaned dataset was ready for analysis.
+
+### 5. Time-of-Day Demand Analysis
+
+#### Hourly Transaction Analysis
+
+- Grouped transactions by hour of the day (0–23).
+- Analyzed hourly transaction volume.
+
+#### Hourly Revenue Analysis
+
+- Calculated total revenue for each hour.
+- Studied the distribution of sales throughout the day.
+
+#### Visualization
+
+- Created line and column charts in Power BI.
+- Visualized hourly transaction volume and revenue trends.
+
+#### Peak and Slow Period Identification
+
+- Identified morning rush hours based on transaction volume.
+- Detected slower midday periods.
+- Identified evening peak hours based on revenue and customer activity.
+
+#### Insights & Recommendations
+
+- Summarized hourly demand patterns.
+- Provided recommendations for staff scheduling and operational planning.
+
+### 6. Cross-Location Temporal Comparison
+
+#### Store-wise Data Segmentation
+
+- Segmented the dataset by store location.
+- Analyzed sales performance for each store independently.
+
+#### Hourly Heatmap
+
+- Created hourly heatmaps in Power BI.
+- Compared transaction volume and revenue across different hours for each store.
+
+#### Peak-Hour Comparison
+
+- Compared peak business hours across store locations.
+- Identified similarities and differences in demand patterns.
+
+#### Customer Behaviour Analysis
+
+- Analyzed customer purchasing behaviour at each location.
+- Identified location-specific demand patterns and preferences.
+
+#### Insights & Recommendations
+
+- Summarized similarities and differences in temporal sales trends.
+- Recommended location-specific staffing, inventory planning, and operational strategies.
+
+
 
 
 
