@@ -154,6 +154,38 @@ All engineered features were validated before further analysis.
 - Summarized similarities and differences in temporal sales trends.
 - Recommended location-specific staffing, inventory planning, and operational strategies.
 
+- ### 📊 Dataset Description
+
+**Dataset Name:** Aficionado Coffee Roasters - Sales Transaction Data (2025)
+
+**Source:** Kaggle / Company Internal Data
+**Total Records:** 149,116 rows
+**Total Attributes:** 12 columns
+
+**About the Dataset:**
+This dataset contains detailed transaction records of a coffee shop chain across three locations - Astoria, Lower Manhattan, and Hell's Kitchen. It helps in analyzing time-based sales performance.
+
+**Dataset Structure:**
+
+| Column Name | Type | Description |
+| :--- | :--- | :--- |
+| transaction_id | Integer | Unique identifier for each transaction |
+| transaction_date | Date | Date of the transaction |
+| transaction_time | Time | Time of the transaction (Used for peak hour analysis) |
+| transaction_qty | Integer | Quantity of products sold |
+| store_location | String | Location of the store |
+| product_category | String | Category like Coffee, Tea, Bakery |
+| product_type | String | Sub-type like Latte, Espresso, etc. |
+| product_detail | String | Detailed product name |
+| unit_price | Float | Price per unit |
+| total_sale | Float | Calculated as `transaction_qty * unit_price` - Total revenue |
+
+**Key Columns Used for this Project:**
+- `transaction_time` -> To find peak sales hours
+- `store_location` -> To compare store performance  
+- `product_category` & `product_detail` -> To find best-selling products
+- `total_sale` -> To analyze revenue trends
+
 
 
 
