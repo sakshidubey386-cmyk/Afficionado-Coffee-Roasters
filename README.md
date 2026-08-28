@@ -186,6 +186,13 @@ This dataset contains detailed transaction records of a coffee shop chain across
 - `product_category` & `product_detail` -> To find best-selling products
 - `total_sale` -> To analyze revenue trends
 
+- ☕ **Afficionado Coffee Roasters - Sales AnalysisThis**
+- repository contains 2 types of dashboards:Power BI Dashboard (coffee project.pbix)
+- : Peak hours, weekly trends, monthly sales 2025
+- **Python Analysis (Google Colab - Coffee_csv_project.ipynb)**
+- :Data cleaning & Exploratory Data Analysis using Pandas, Matplotlib, SeabornAnalysis: Daily sales trend, Day-of-week performance, Sales heatmap by hour, Location-wise revenueTool
+- : Python in Google ColabTools Used: Power BI, Python, Pandas, GitHub
+
 
 
 
